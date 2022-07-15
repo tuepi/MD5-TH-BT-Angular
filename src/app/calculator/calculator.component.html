@@ -1,0 +1,28 @@
+<h2>Pet profile</h2>
+<label>
+  Number 1:
+  <input type="number" [(ngModel)]="a">
+</label>
+<br>
+<label>
+  Number 2:
+  <input type="number" [(ngModel)]="b">
+</label>
+<br>
+<button (click)="sum(a, b)">+</button>
+<button (click)="sub(a, b)">-</button>
+<button (click)="mul(a, b)">*</button>
+<button (click)="dev(a, b)">/</button>
+<br>
+<h3>Result : {{result}}</h3>
+
+<h1>Thay đổi màu</h1>
+
+<div class="container">
+  <label for="colorPicker">Chọn màu:</label>
+  <input #target id="colorPicker" type="color" [value]="background" (change)="changeColor(target.value)">
+</div>
+<div class="container">
+  <div class="img-thumbnail" style="width: 200px; height: 200px" [style.background]="background">
+  </div>
+</div>
