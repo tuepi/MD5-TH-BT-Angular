@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="content">
+  <button onclick="login()">Login</button>
+  <button onclick="signup()">Signup</button>
+</div>
+</body>
+<script>
+  function login() {
+    document.getElementById("content").innerHTML = `
+    <button onclick="cre()">Create</button>
+  <button onclick="list()">List</button>`
+  }
+
+  function cre(){
+    document.getElementById("content").innerHTML = `create đây`
+  }
+
+  function list() {
+    document.getElementById("content").innerHTML = `List đây`
+  }
+
+  function signup() {
+    document.getElementById("content").innerHTML = `register`
+
+  }
+</script>
+</html>

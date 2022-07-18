@@ -16,6 +16,8 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { RatingBarComponent } from './rating-bar/rating-bar.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { TodoComponent } from './todo/todo.component';
+import { RegisterComponent } from './register/register.component';
+import { TimelinesComponent } from './timelines/timelines.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { TodoComponent } from './todo/todo.component';
     ProgressBarComponent,
     RatingBarComponent,
     CountdownTimerComponent,
-    TodoComponent
+    TodoComponent,
+    RegisterComponent,
+    TimelinesComponent
   ],
     imports: [
         BrowserModule,

@@ -11,7 +11,7 @@ export class CountdownTimerComponent implements OnInit {
   temp : any;
 
   loading() {
-    if (this.time != 0) {
+    if (this.time < 0) {
       this.interval = setInterval(() => {
         this.time = +this.time - 1;
         if (this.time == 0) {
